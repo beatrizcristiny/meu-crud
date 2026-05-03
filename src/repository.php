@@ -25,3 +25,15 @@ function buscar_tarefa (int $id): ?array
 }
 
 function atualizar_tarefa(int $id, string $titulo, ?string $descricao, string $status): bool
+{
+    $sql = "UPDATE tarefas SET titulo = ?, descricao = ?, status = ? WHERE id = ?";
+    $stmt = db() ->prepare($sql);
+    return $stmt->execute([$titulo, $descricao, $status, $id]);
+}
+
+function excluir_tarefa(int $id): bool
+{
+    $sql = "DELETE FROM tarefas WHERE id = ?";
+    $stmt = db()->prepare($sql);
+    return $stmt->execute([$id]);
+}
