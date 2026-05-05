@@ -11,6 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $status = $_POST['status'] ?? 'pendente';
 
     if ($titulo === '') $erros[] ="Titulo é obrigatorio.";
+    if (strlen($titulo) <3) $erros[] = "Titulo deve ter pelo menos 3 caracteres.";
     if (!in_array($status, ['pendente', 'feito'], true)) $erros[] ="Status invalido.";
 
     if (!$erros) {

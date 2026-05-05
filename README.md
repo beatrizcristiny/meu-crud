@@ -55,4 +55,37 @@ mysql> select * from tarefas order by criado_em desc;
 PERGUNTAS:
 
 4.2 
-é um conjunto de caracteres usado pelo banco que suporta tudo
+1-é um conjunto de caracteres usado pelo banco que suporta todas as letras simbolos e etc.
+
+2- O php lança um erro quando algo da errado no banco de dados em vez de n sinalizar nada, isso facilita encontrar bugs.
+
+5.2
+
+1- query() listar_tarefas pq n recebe dados do usuario.
+prepare() criar_tarefa, buscar_tarefa, excluir_tarefa, atualizar_tarefa.
+
+2- O prepare separa os dados do codigo sql assim  evita ter invasões maliciosas no banco de dados.
+
+7.2
+
+1- Ele é usado em todo lugar que vai aparecer alo na tela, ele muda caracteres especiais para texto seguro assim impede ataques.
+
+2- O get pode ser acessado por robos e o post exige ações que comprovem que você é uma pessoa como clicar em um botão ou escolher imagens.
+
+8.2
+
+1- foram adicionadas
+
+2- String vazia = existe um campo mas ele está vazio
+null = significa ausencia de informação, que realmente não existe um valor.
+
+12.0
+
+A-
+ primary key: é a chave primaria indentifica cada registro de forma unica e não pode repetir.
+
+ auto_increment: gera o numero do id automaticamente e adiciona + 1 a cada registro.
+
+ enum: limita os valores aceitos pelo campo, como 'pendente' ou 'feito'.
+
+ 2
