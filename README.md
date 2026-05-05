@@ -50,3 +50,9 @@ mysql> select * from tarefas order by criado_em desc;
 |  3 | Ler o pdf parte um     | Pagina um               | feito    | 2026-04-29 08:19:19 |
 +----+------------------------+-------------------------+----------+---------------------+
 3 rows in set (0.03 sec)
+
+
+PERGUNTAS:
+
+4.2 
+é um conjunto de caracteres usado pelo banco que suporta tudo
