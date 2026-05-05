@@ -1,5 +1,5 @@
 <?php
-require_once__DIR__.'/../config/db.php';
+require_once __DIR__ . '/../config/db.php';
 
 function listar_tarefas():array
 {
@@ -20,7 +20,7 @@ function buscar_tarefa (int $id): ?array
     $sql = "SELECT * FROM tarefas WHERE id = ?";
     $stmt = db()->prepare($sql);
     $stmt->execute([$id]);
-    $row = $stmt-fetch();
+    $row = $stmt->fetch();
     return $row ?: null;
 }
 

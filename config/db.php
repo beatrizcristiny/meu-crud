@@ -7,12 +7,12 @@ function db () : PDO
     $user = 'root';
     $pass = ''; // no pdf ta q no laragon eralmete fica vazio
 
-    $dsn = "mysqk:host=$host;dbname=$dbname;charset=utf8mb4";
+    $dsn = "mysql:host=$host;dbname=$dbname;charset=utf8mb4";
     
-    $pedo = new PDO($dsn, $user, $pass,[
+    $pdo = new PDO($dsn, $user, $pass,[
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-        PDO::ATTER_EMULATE_PREPARES => false,
+        PDO::ATTR_EMULATE_PREPARES => false,
 
     ]);
 
