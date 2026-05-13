@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 <a class="btn" href="?acao=list">Voltar</a>
-<h2>Editar tarefa #<?= (int)$id ?></h2>
+<h2>Editar tarefa</h2>
 
 <?php if ($erros): ?>
     <ul style="color:#a00;">
@@ -35,13 +35,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <p>
                 <label>Titulo<br>
                 <input name="titulo" value="<?= htmlspecialchars($titulo) ?>"
-                maxlenght="120" style="widht:100%;" required>
+                maxlength="120" style="width:100%;" required>
         </label>
             </p>
 
             <p>
                 <label>Descrição<br>
-                <textarea name="descricao" rows="4" stule="width:100%;"><?= htmlspecialchars ($descricao) ?></textarea>
+                <textarea name="descricao" rows="4" style="width:100%;"><?= htmlspecialchars ($descricao) ?></textarea>
         </label>
             </p>
 
@@ -54,5 +54,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </label>
             </p>
 
-            <button clas="btn" type="submit">Atualizar</button>
+            <button class="btn" type="submit">Atualizar</button>
         </form>
