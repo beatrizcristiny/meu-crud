@@ -20,7 +20,7 @@ $tarefas =listar_tarefas();
         <tr>
             <td><?= (int) $t['id']?></td>
             <td><?=htmlspecialchars($t['titulo'])?></td>
-            <td><span class="badge"><?= htmlspecialchars($t['status'])?><span></td>
+            <td><span class="badge"><?= htmlspecialchars($t['status'])?></span></td>
             <td><?= htmlspecialchars($t['criado_em']) ?></td>
             <td class="row">
             <a class="btn" href="?acao=edit&id=<?= (int)$t['id'] ?>">Editar</a>
