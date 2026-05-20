@@ -88,4 +88,17 @@ A-
 
  enum: limita os valores aceitos pelo campo, como 'pendente' ou 'feito'.
 
- 2
+ 2- inserções na tabela
+
+ alter table tarefas add prioridade tinyint not null default 1;
+
+ update tarefas set prioridade = 1 where id = 1;
+ update tarefas set prioridade = 2 where id = 2;
+ update tarefas set prioridade = 3 where id = 3;
+
+
+ 12.0 (B)
+
+ testado e funciounou nao apareceu alerta mas sim so texto, o htmlspecialchars converteu o script para texto assim impendindo codigos malicosos
+
+teste sqlinjection deu certo tambem signfica que o prepare funcionou, ele tratou texto como dado e nao como codigo sql
